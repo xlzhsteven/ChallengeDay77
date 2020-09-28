@@ -17,7 +17,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(sortedPeople) { person in
-                NavigationLink(person.name, destination: Text(person.name))
+                NavigationLink(destination: Text(person.name)) {
+                    PersonRow(person: person)
+                }
             }
             .navigationBarItems(trailing: Button(action: {
                 self.showEditView = true
@@ -27,6 +29,7 @@ struct ContentView: View {
             .sheet(isPresented: $showEditView) {
                 EditView(people: self.$people)
             }
+            .navigationTitle(Text("Image list"))
         }
     }
 }
@@ -39,4 +42,19 @@ struct Person: Identifiable, Comparable {
     let id = UUID()
     let name: String
     let image: UIImage
+}
+
+struct PersonRow: View {
+    var person: Person
+    
+    var body: some View {
+        HStack {
+            Image(uiImage: person.image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Spacer()
+            Text(person.name)
+        }
+        .padding()
+    }
 }
