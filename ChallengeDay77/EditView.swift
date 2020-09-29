@@ -15,6 +15,7 @@ struct EditView: View {
     @State private var inputImage: UIImage?
     @State private var showImagePicker = false
     @State private var person: Person?
+    private let dataManager = ManageData()
     
     var body: some View {
         NavigationView {
@@ -28,21 +29,16 @@ struct EditView: View {
                 ImagePicker(image: $inputImage)
             }
             .navigationBarItems(trailing: Button("Save", action: {
-                guard let person = person else { return }
+                guard let person = person, let image = inputImage else { return }
                 people.append(person)
+                dataManager.save(people)
+                dataManager.saveImage(pathName: name, uiImage: image)
                 presentationMode.wrappedValue.dismiss()
             }))
         }
     }
     
     func addPerson() {
-        guard let image = inputImage else { return }
-        person = Person(name: name, image: image)
+        person = Person(name: name)
     }
 }
-
-//struct EditView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        EditView()
-//    }
-//}

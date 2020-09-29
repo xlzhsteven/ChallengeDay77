@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D193AD63252230F400CBF9B6 /* ImageFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193AD62252230F400CBF9B6 /* ImageFullScreenView.swift */; };
+		D193AD682522386E00CBF9B6 /* ManageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193AD672522386E00CBF9B6 /* ManageData.swift */; };
 		D1B6DC08252113BF00D968AD /* ChallengeDay77App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6DC07252113BF00D968AD /* ChallengeDay77App.swift */; };
 		D1B6DC0A252113BF00D968AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B6DC09252113BF00D968AD /* ContentView.swift */; };
 		D1B6DC0C252113C000D968AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B6DC0B252113C000D968AD /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D193AD62252230F400CBF9B6 /* ImageFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFullScreenView.swift; sourceTree = "<group>"; };
+		D193AD672522386E00CBF9B6 /* ManageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageData.swift; sourceTree = "<group>"; };
 		D1B6DC04252113BF00D968AD /* ChallengeDay77.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeDay77.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B6DC07252113BF00D968AD /* ChallengeDay77App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDay77App.swift; sourceTree = "<group>"; };
 		D1B6DC09252113BF00D968AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 			children = (
 				D1B6DC07252113BF00D968AD /* ChallengeDay77App.swift */,
 				D1B6DC09252113BF00D968AD /* ContentView.swift */,
+				D193AD672522386E00CBF9B6 /* ManageData.swift */,
+				D193AD62252230F400CBF9B6 /* ImageFullScreenView.swift */,
 				D1B6DC17252113E900D968AD /* EditView.swift */,
 				D1B6DC1D2521A42D00D968AD /* ImagePicker.swift */,
 				D1B6DC1A252113FB00D968AD /* ImagePickerView.swift */,
@@ -152,6 +158,8 @@
 				D1B6DC1E2521A42D00D968AD /* ImagePicker.swift in Sources */,
 				D1B6DC08252113BF00D968AD /* ChallengeDay77App.swift in Sources */,
 				D1B6DC18252113E900D968AD /* EditView.swift in Sources */,
+				D193AD682522386E00CBF9B6 /* ManageData.swift in Sources */,
+				D193AD63252230F400CBF9B6 /* ImageFullScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
